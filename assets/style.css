@@ -1,4 +1,86 @@
 /* =======================base dự án===========*/
-*{
-    font-size: 10px;
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  font-family: "Poppins", sans-serif;
+}
+
+/* =================common========== */
+a {
+  text-decoration: none;
+}
+
+.main-content {
+  width: 1171px;
+  max-width: calc(100% - 48px);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0 16px;
+  min-width: 108px;
+  line-height: 48px;
+  color: #1ebfc1;
+  text-align: center;
+  font-size: 1.6rem;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid #1ebfc1;
+}
+
+/*===========header===========  */
+
+.header .body-header {
+  display: flex;
+  align-items: center;
+  padding: 52px 0 8px;
+}
+
+.header .fixed {
+  position: sticky;
+  top: -44px;
+}
+
+.header ul {
+  display: flex;
+  margin-left: 235px;
+  gap: 39px;
+}
+
+.header .action {
+  display: flex;
+  margin-left: auto;
+  align-items: center;
+}
+
+.header .action .title {
+  margin-right: 48px;
+}
+
+.nav a,
+.header .action .title {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.nav a:hover,
+.header .action .title:hover {
+  color: #2f3a3b;
+  font-size: 1.6rem;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.header .btn-sign-up {
 }
