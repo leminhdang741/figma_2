@@ -44,9 +44,11 @@ a {
   align-items: center;
   padding: 52px 0 0;
   margin-bottom: 50px;
+  background-color: #fff;
 }
 
-.header .fixed {
+.header.fixed {
+  z-index: 1;
   position: sticky;
   top: -44px;
 }
@@ -524,4 +526,151 @@ a {
   font-weight: 400;
   line-height: normal;
   margin-top: 11px;
+}
+
+/* ===========feedback========== */
+.body-feedback {
+  margin-top: 214px;
+  padding-bottom: 80px;
+  position: relative;
+}
+
+.feedback .block-quote {
+  margin-top: 37px;
+}
+
+.feedback .comment {
+  margin-top: 27px;
+  width: 419px;
+  color: #5d6564;
+  font-size: 3.2rem;
+  font-weight: 400;
+  line-height: 1.5; /* 150% */
+}
+
+.feedback .title {
+  margin-top: 33px;
+  color: #767e7e;
+  font-size: 1.6rem;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+.feedback .title::before {
+  content: "";
+  display: inline-block;
+  width: 8px;
+  height: 2px;
+  background: #070707;
+  margin-right: 6px;
+}
+
+.feedback .title strong {
+  color: #070707;
+  font-size: 1.6rem;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.feedback .cta-feedback {
+  margin-top: 52px;
+  display: flex;
+  width: 130px;
+  height: 50px;
+  gap: 40px;
+}
+
+.feedback .cta-feedback .cta-grp {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #1ebfc1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ===avatar=== */
+
+.feedback .ava {
+  border-radius: 50%;
+  object-fit: cover;
+  position: absolute;
+}
+
+.feedback .ava1 {
+  width: 78px;
+  height: 78px;
+  left: 491px;
+  top: 336px;
+}
+
+.feedback .ava2 {
+  width: 92px;
+  height: 92px;
+  left: 635px;
+  top: 0;
+}
+
+.feedback .ava3 {
+  width: 78px;
+  height: 78px;
+  left: 703px;
+  top: 403px;
+}
+
+.feedback .ava4 {
+  width: 235px;
+  height: 235px;
+  left: 764px;
+  top: 107px;
+}
+.feedback .ava5 {
+  width: 78px;
+  height: 78px;
+  right: 32px;
+  top: 374px;
+}
+
+.feedback .ava6 {
+  width: 78px;
+  height: 78px;
+  top: 19px;
+  right: 0;
+}
+
+/* ======base====== */
+
+.body-base {
+  display: flex;
+  margin-top: 50px;
+  width: 1440px;
+  height: 272px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: calc(100% - 48px);
+  background: #def6f5;
+}
+.body-base .block-left {
+  margin-top: 76px;
+  margin-left: 135px;
+}
+
+.body-base .block-left .title {
+  color: #070707;
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: normal;
+  width: 420px;
+}
+
+.body-base .block-left .desc {
+  margin-top: 18px;
+}
+
+.body-base .block-right {
+  margin-top: 96px;
+  margin-left: 410px;
 }
